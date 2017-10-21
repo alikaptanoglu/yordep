@@ -1,7 +1,7 @@
 # notveren
 
 yorumdeposu.com'da kullanılan scripttir.
-Biçok sözlük özelliğini taşımaktadır. Ekstradan, entryler için yıldız verme usülü puanlama sistemi vardır.
+Birçok sözlük özelliğini taşımaktadır. Ekstradan, entryler için yıldız verme usülü puanlama sistemi vardır.
 
 ### Scripti kullanabilmek için:
 
