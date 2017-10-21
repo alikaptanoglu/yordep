@@ -36,4 +36,13 @@ $MAILPORT = "";
 // FOOTER MESSAGE
 $FOOTERMESSAGE = "";
 
+
+
+// GOOGLE CAPTCHA OPTIONS
+$GCAPTCHA_OPEN = false; // If you want to use google captcha, change it as true
+$captchaSecretCode = ''; // If GCAPTCHA_OPEN is true, please write your captchaSecretCode here
+$dataSiteKey = '';
+
+
+
 ?>

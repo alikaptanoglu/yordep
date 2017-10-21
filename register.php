@@ -78,15 +78,19 @@
             
             
             if($flag==0){
-            $captchaSecretCode = '6LeyghkUAAAAAH5CER2O5NalD0BXsga-zVvioVNH';
+            	
+            	
+            if($GCAPTCHA_OPEN) {
             $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$captchaSecretCode."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
-            
-            if($response['success']){
-                $success =  addUser($conn,$username, $password, $email);
+
+            	 if($response['success']){
+                	$success =  addUser($conn,$username, $password, $email);
+            	}
+            	 else{
+                	die("Spam kontrolünü geçemediniz.<br>");
+            	}
             }
-            else{
-                die("Spam kontrolünü geçemediniz.<br>");
-            }
+
             
             if($success==FALSE){
                 
@@ -135,10 +139,15 @@ E-mail:
 <br>
 Şifre (tekrar):
 <input type="password" name="password2" required="required">
-<br>
-<div class="g-recaptcha" data-sitekey="6LeyghkUAAAAALJkCdSpuK_JTxVlCUzuZJwxm7dI"></div>
-<input id="button" type="submit" value="Kayıt">
-    
+_END;
+	if($GCAPTCHA_OPEN){
+		
+		echo "<div class='g-recaptcha' data-sitekey='$dataSiteKey'></div>";
+
+	}
+	echo <<<_END
+
+<input id="button" type="submit" value="Kayıt">    
         </pre>
     </form>  
        

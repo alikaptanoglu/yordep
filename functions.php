@@ -1,6 +1,7 @@
 <?php
 
         require_once 'config.php';
+        require_once 'class.phpmailer.php';
         
         function isThereUser($conn,$username_in_query){
             $query= "SELECT username FROM users WHERE username='$username_in_query'";
