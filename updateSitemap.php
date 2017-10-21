@@ -1,11 +1,12 @@
 <?php
 
 require_once 'includes/SitemapGenerator.php';
+require_once 'config.php';
 require_once 'conn.php';
 
-$sitemap = new SitemapGenerator("http://yorumdeposu.com/");
+$sitemap = new SitemapGenerator($SITEADDR);
 
-$query = "SELECT title_id FROM titles ORDER BY title_id DESC";
+$query = "SELECT title_id FROM titles ORDER BY title_id DESC LIMIT 100";
 $result = $conn->query($query);
 if(!$result){
     die($conn->error);
@@ -18,7 +19,7 @@ $num = $result->num_rows;
 for($i=0;$i<$num;$i++){
     $result->data_seek($i);
     $row = $result->fetch_array(MYSQLI_NUM);
-    $sitemap->addUrl("http://yorumdeposu.com/title.php?id=$row[0]" ,  date('c'), 'daily', 0.8);
+    $sitemap->addUrl($SITEADDR."/title.php?id=$row[0]" ,  date('c'), 'daily', 0.8);
 }
 
 
