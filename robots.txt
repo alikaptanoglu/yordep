@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: title.php
+
+Disallow: edit.php
+Disallow: delete.php
+Disallow: entry.php
+Disallow: login.php
+Disallow: register.php
+Disallow: newtitle.php
+
+
+
+Sitemap: http://yorumdeposu.com/sitemap.xml

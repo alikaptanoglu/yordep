@@ -1,0 +1,416 @@
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide{ display: none; }
+}
+
+
+@media screen and (min-width: 721px) {
+  .desktop-hide{ display: none; }
+}
+
+
+#cats{
+    display: inline;
+    
+}
+
+textarea{
+    font-size: 15   px;
+}
+
+
+
+.g-recaptcha{
+transform:scale(0.8) !important;
+-webkit-transform:scale(0.8) !important;
+transform-origin:0 0 !important;
+-webkit-transform-origin:0 0 !important;
+}
+
+
+#list{
+	z-index: 2;
+	position: fixed;
+        top: 0px;
+	left: 2%;
+	width: 20%;
+	height: 100%;
+	bottom: 10%; 
+        padding-top: 5%;
+	background-color: #f2f1f0;
+	
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	overflow-y: scroll;
+	
+	font-family: sans-serif;
+
+	
+}
+
+#list #list_area{
+	margin: 5%;
+}
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+p#entry_info{
+    font-family: monospace;
+    font-size: 12px;
+    
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    p#entry_info{
+        margin-right: 5%;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    .edit_delete_area{
+        margin-right: 5%;
+    }
+}
+
+
+
+
+a{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+	color: black;
+
+}
+
+
+
+h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+a#title{
+    font-family: 'Bree Serif', serif;
+    font-size: 28px;
+}
+
+a#mini_title{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+}
+
+
+
+hr{
+ 
+    color: white;
+    opacity: 0.5;
+    
+    
+}
+
+body{
+    background-color: #FEF4F4;
+    overflow-x: hidden !important;
+
+}
+
+body .content_area{
+	position: absolute;
+	margin-left: 23%;
+	margin-top: 80px;
+	margin-bottom: 5%;
+	min-height: 750px;
+	width: 50%;
+        
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    body .content_area{
+        
+        position: absolute;
+	margin-left: 2%;
+        margin-right: 2%;
+	margin-bottom: 5%;
+	min-height: 750px;
+        width: auto;
+        
+    }
+}
+
+    
+
+
+header{
+	z-index: 3;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height: 70px;
+   border-bottom: 1px solid gray;
+   background-color: #f2f1f0;
+}
+
+header .headerlogo{
+        font-family: sans-serif;
+        font-size: 15px;
+	position:absolute;
+	top:10%;
+        height: 35px;
+	margin-left: 3%;
+        background-size: 100% 100%;
+        background-repeat: no;
+}
+
+header .searcharea{
+        font-family: sans-serif;
+        font-size: 12px;
+	position:absolute;
+	top:10%;
+	margin-left: 30%;
+        margin-right: 50%;
+	
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    header .searcharea{
+        
+        top:50%;
+        margin-left: 24%;
+        
+    }
+}
+
+
+
+
+header .membership{
+   font-family: sans-serif;
+   font-size: 12px;
+       top: 15%;
+    position:absolute;
+    right: 0;
+    width: 12%;
+}
+
+
+header .categories{
+        font-family: sans-serif;
+        font-size: 15px;
+	position:absolute;
+	top:70%;
+	margin-left: 3%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  header .categories{display: none;}
+}
+
+
+
+
+
+a#element{
+    margin-right: 50px;
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;  
+}
+
+#general_font{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;  
+}
+
+
+footer{
+    background-color: #f5e0d5;  
+    margin-top: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+footer .content{
+    
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+
+#button{
+background-color: #D4EBC0;
+}
+
+
+
+#button:hover{
+background-color: #AFC19E;
+}
+
+input{
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkred;
+	height: 40px;
+	width: 100%;
+        max-width: 400px;
+	font-size: 30px;
+        font-family: 'Ubuntu Condensed', sans-serif;
+	border-radius: 6px;
+	box-shadow: 0px 15px 15px -15px;
+	color: black;
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    input{
+        width: 100%;
+        
+    }
+}
+
+
+
+
+
+input#date{
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkred;
+	height: 40px;
+	width: 10%;
+	font-size: 20px;
+	border-radius: 6px;
+	box-shadow: 0px 15px 15px -15px;
+	color: black;
+}
+
+input#banButton{
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkred;
+	height: 40px;
+	width: auto;
+	font-size: 20px;
+	border-radius: 6px;
+	box-shadow: 0px 15px 15px -15px;
+	color: black;
+}
+
+input:hover{
+	border-color: black;
+	border-width: 1px;
+	background-color: #D4C0C0;
+
+}
+
+input:focus{
+	border-color: black;
+	border-width: 4px;
+	background-color: darkgray;
+        color: white;
+
+}
+
+
+form{
+
+font-size: 15px;
+
+}
+
+
+textarea{
+    
+
+    width: 100%;
+    
+}
+
+
+input#searchbox{
+        background-image: url('img/search.png');
+        background-size: 10%;
+        background-repeat: no-repeat;
+        background-position: right;
+    	border-style: solid;
+	border-width: 1px;
+	border-color: darkred;
+	height: 30px;
+	width: 250px;
+       	font-size: 16px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: 14px; 
+	border-radius: 6px;
+	box-shadow: 0px 15px 15px -15px;
+	color: black;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    input#searchbox{
+        width: 150px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+input#searchbox:focus{
+    background-image: none;
+
+}
+
+
+
+a#searchresult{
+    font-size: 18px;
+    
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+.search-result-box{
+    background-color: #f5e0d5;
+    opacity: 0.70;
+    
+}
