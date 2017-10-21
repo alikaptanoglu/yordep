@@ -33,4 +33,7 @@ $MAILPASS = "";
 $MAILHOST = "";
 $MAILPORT = "";
 
+// FOOTER MESSAGE
+$FOOTERMESSAGE = "";
+
 ?>
