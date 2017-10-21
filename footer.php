@@ -1,7 +1,12 @@
 <footer>
 
 <div class="content">
-<p>©<?php echo date('Y'); ?> Yorum Deposu. Tüm hakları saklıdır.</p>
+<p>©<?php
+    require_once 'config.php';
+    
+    echo date('Y').$FOOTERMESSAGE;     
+    ?>
+</p>
     
     
 <a id='general_font' href='stat.php'>istatistik</a>
