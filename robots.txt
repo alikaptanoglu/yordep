@@ -11,4 +11,4 @@ Disallow: newtitle.php
 
 
 
-Sitemap: http://yorumdeposu.com/sitemap.xml
+Sitemap: sitemap.xml
