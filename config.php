@@ -4,6 +4,7 @@
  * This script was made for yorumdeposu.com
  * First author: Metin Orak
  * Year: 2017
+ * Licence : https://www.gnu.org/licenses/gpl-3.0.html GPL V 3.0
  * Email: orakmetin@gmail.com
  * Language of Script: Turkish
  */
