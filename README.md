@@ -8,5 +8,7 @@ Birçok sözlük özelliğini taşımaktadır. Ekstradan, entryler için yıldı
 1. Dosyaları sunucunuza atın
 2. yordep.sql isimli veritabanı dosyasını import edin
 3. config.php isimli dosyadan ayarları kendinize göre yapın
+4. Yukarıdaki işlemleri yaptıktan sonra, siteye girip bir kullanıcı oluşturun.
+5. Daha sonra veritabanı verilerine ulaşın(phpMyAdmin ile ulaşabilirsiniz) users tablosunda, kendi oluşturduğunuz üye kaydındaki admin sütununa "yes" yazınız. (tırnak kullanmadan)
 
 **Not**: Bu script yorumdeposu.com için yapıldığından genel kullanıma hazır olmayabilir. Üzerinde oynamalar yaparak hazır hale getirebilirsiniz.
