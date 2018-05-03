@@ -10,6 +10,10 @@
         require_once 'header.php';
         require_once 'list.php';
         require_once 'functions.php';
+	    session_start();
+	    if	(isset($_SESSION['username'])) {
+		    header("Location: /");
+	    }
         ?>   
         
         
