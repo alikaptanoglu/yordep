@@ -1,3 +1,5 @@
+Not: Scripte olan ilgiden dolayı daha modern yapıda ve sistemli bir şekilde yeniden yazmayı düşünüyorum. Fakat net bir tarih veremiyorum.
+
 # yordep
 
 yorumdeposu.com'da kullanılan scripttir.
