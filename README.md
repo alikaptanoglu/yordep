@@ -1,5 +1,7 @@
 Not: Scripte olan ilgiden dolayı daha modern yapıda ve sistemli bir şekilde yeniden yazmayı düşünüyorum. Fakat net bir tarih veremiyorum.
 
+Not2: http://yorumdeposu.com/entry.php?id=409
+
 # yordep
 
 yorumdeposu.com'da kullanılan scripttir.
