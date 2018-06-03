@@ -21,7 +21,7 @@
         
         function goUserPage($username){
             
-            header("Location: +"$SITEADDR"+/profile.php?u=$username");
+            header("Location: ".$SITEADDR."/profile.php?u=$username");
         }
         function last_user($conn){
             $query= "SELECT username FROM users ORDER BY id DESC LIMIT 1";
@@ -281,7 +281,7 @@ _END;
 				$mail->Host     =  $MAILHOST; // SMTP servers
                                 $mail->Port= $MAILPORT;
 				$mail->SMTPAuth = true;     // turn on SMTP authentication
-				$mail->Username = $MAILADDR  // SMTP username
+				$mail->Username = $MAILADDR;  // SMTP username
 				$mail->Password = $MAILPASS; // SMTP password
 				$mail->From     = $MAILADDR; // smtp kullanÄ±cÄ± adÄ±nÄ±z ile aynÄ± olmalÄ±
 				$mail->Fromname =  $SITENAME;
