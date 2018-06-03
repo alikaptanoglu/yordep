@@ -19,7 +19,6 @@ function loadDoc(category) {
 <div id="list_area">
 <?php
 
-session_start();
 if(isset($_SESSION['precat'])){
     $category= $_SESSION['precat'];
 }

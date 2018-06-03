@@ -1,5 +1,5 @@
  <?php
-
+ ob_start();
  session_start();
  require_once 'conn.php';
  require_once 'functions.php';
@@ -21,6 +21,7 @@ $q = get_request($conn,'q');
     }
     else
     {
+        $isUserSearch = FALSE;
         $query= "SELECT title,title_id FROM titles "
                 . "WHERE MATCH(title) AGAINST('$q') OR title LIKE '%$q%' LIMIT 10";
         $result= $conn->query($query);
@@ -34,7 +35,7 @@ $q = get_request($conn,'q');
     echo "<h2>Arama Sonuçları:</h2> ";
     
     if($num_rows==0){
-        if($_SESSION['username']){
+        if(!isset($_SESSION['username'])){
     $newtitle_text= "<a href='newtitle.php?title=$q'> <İstersen sen açabilirsin></a>";
             }
     else{

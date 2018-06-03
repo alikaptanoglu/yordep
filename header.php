@@ -1,4 +1,7 @@
-
+<?php
+  ob_start();
+  session_start();
+?>
 <header>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
@@ -52,8 +55,6 @@ function loadDocMobile(category) {
     
     
     <?php
-    ob_start();
-    session_start();
     if($_SERVER['PHP_SELF']!='/login.php'){
         $_SESSION['lastpage']= "$_SERVER[REQUEST_URI]";
     }
