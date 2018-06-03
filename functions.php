@@ -307,7 +307,6 @@ _END;
         
         
         function add_entry($conn,$title_id,$entry,$stars,$category,$current_username){
-            session_start();
             if(!isset($_SESSION['last_update']) || time() >= $_SESSION['last_update']+3){
                 $query= "INSERT INTO entries(title_id,entry,stars,category,username)"
                     . "VALUES('$title_id','$entry','$stars','$category','$current_username')";
@@ -317,7 +316,7 @@ _END;
                     die($conn->error);
                 }
                 
-                updateSitemap($title_id);
+                //updateSitemap($title_id);
                 $_SESSION['last_update'] = time();
             }
             

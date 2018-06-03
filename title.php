@@ -55,7 +55,7 @@
         <div class='desktop-hide'><span id='cats'></span></div>
 
 <?php
-
+        $num_pages = 1;
     
         if(isset($_SESSION['username'])){
             $username= $_SESSION['username'];
@@ -82,8 +82,12 @@
 
 if(isset($_GET['title_id']) || isset($_GET['id'])){
     
-    if(isset($_GET['fromlist']))
-        $fromlist= get_get($conn,'fromlist');
+    if(isset($_GET['fromlist'])){
+        $fromlist= "yes";
+    }
+    else{
+        $fromlist = "no";
+    }
     //$title_id= get_get($conn,'title_id');
     $query= "SELECT title,category FROM titles WHERE title_id='$title_id'";
     $result= $conn->query($query);
@@ -96,8 +100,8 @@ if(isset($_GET['title_id']) || isset($_GET['id'])){
 
     $row= $result->fetch_array(MYSQLI_NUM);
     $title= $row[0];
-    $category= $row[1];    
-
+    $category= $row[1];
+    
     
     
         if(isset($_SESSION['username'])){
@@ -108,14 +112,11 @@ if(isset($_GET['title_id']) || isset($_GET['id'])){
             $entry= get_post($conn,'entry');
             
             
-            
             add_entry($conn,$title_id,$entry,$stars,$category,$current_username);
-            
-            
-            
             $num_pages= find_num_pages($conn, $title_id, $fromlist);
             $num_pages/=10;
             $num_pages= ceil($num_pages);
+            
             header("Location: title.php?id=$title_id&page=$num_pages");
             
             

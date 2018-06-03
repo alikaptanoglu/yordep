@@ -94,6 +94,9 @@
                 	die("Spam kontrolünü geçemediniz.<br>");
             	}
             }
+            else{
+                $success =  addUser($conn,$username, $password, $email);
+            }
 
             
             if($success==FALSE){
@@ -104,7 +107,7 @@
             }
             else{
                 echo "<font color='green'>Kaydın Başarıyla Gerçekleştirildi!</font><br>";
-                require_once 'includes/google-registration-follower.php';
+                //require_once 'includes/google-registration-follower.php';
 
             }
             
