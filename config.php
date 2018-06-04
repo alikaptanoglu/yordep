@@ -14,9 +14,9 @@
  */
 
 //DATABASE SETTINGS
-$DBNAME = ""; // Database name
+$DBNAME = "yordep"; // Database name
 $DBPASS = ""; // Database  password
-$DBUSER = ""; // Database Username
+$DBUSER = "root"; // Database Username
 $DBHOST = "localhost"; //Database Host name
 
 

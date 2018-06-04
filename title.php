@@ -238,7 +238,7 @@ if(isset($_GET['title_id']) || isset($_GET['id'])){
       
 
 
-    if($_SESSION['username']){
+    if(isset($_SESSION['username'])){
         
         $email= $_SESSION['email'];
         $username= $_SESSION['username'];
