@@ -73,7 +73,7 @@ if(isset($_GET['u'])){
         if(($status == 'admin') && ($status_of_the_member!='admin')){
             if(!isBanned($conn,$username)){
                 echo <<<_END
-                <form action='profile.php?u=$username' method='post'>
+                <form action= 'profile.php?u=$username' method='post'>
 
                 <input type='hidden' name='willBannedUser' value='$username'>
                 <input id='banButton' type='submit' value='Engelle'>

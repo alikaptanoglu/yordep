@@ -69,7 +69,7 @@ echo "<p>Yorum  sayısı: ".$row[0]."</p>";
 
 
 $last_user= last_user($conn);
-echo "<p>Son kullanıcı: <a href='/profile.php?u=$last_user'>$last_user</a></p>";
+echo "<p>Son kullanıcı: <a href='profile.php?u=$last_user'>$last_user</a></p>";
 
 
 

@@ -65,7 +65,7 @@ if(isset($_GET['id'])){
      
    $row= $result->fetch_array(MYSQLI_NUM);
 
-        $result->data_seek($i);
+        $result->data_seek(0);
         $row= $result->fetch_array(MYSQLI_NUM);
         $entry= $row[0];
         $stars= $row[1];

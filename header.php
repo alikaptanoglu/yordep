@@ -1,6 +1,10 @@
 <?php
   ob_start();
-  session_start();
+  if(!isset($_SESSION)){
+    session_start();
+  }
+  
+  include_once 'config.php';
 
   if($_SERVER['PHP_SELF'] != '/login.php'){
       $_SESSION['lastpage'] = "$_SERVER[REQUEST_URI]";
@@ -58,7 +62,7 @@ function loadDocMobile(category) {
   
 	<div class="headerlogo">
         
-        <a href='/'><img alt='logo' src="img/logo.png" height='35px' title="yorumdeposu.com"></a>
+        <a href='<?php echo $SITEADDR; ?>'><img alt='logo' src="img/logo.png" height='35px' title="yorumdeposu.com"></a>
         <br>
         <a href='#top' class='desktop-hide' onclick='loadCats()'>kategori</a>
         </div>  
