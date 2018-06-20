@@ -5,8 +5,6 @@
         <style>@import'style.css'</style>
         
         <?php
-        ob_start();
-        session_start();
 
         require_once 'header.php';
         require_once 'list.php';
@@ -62,14 +60,6 @@
                 
                 logIn($username,$email);
 
-               
-                $previous_address= $_SESSION['lastpage'];
-                if($previous_address == "register.php"){
-                    header("Location: index.php");
-                }
-                else{
-                    header("Location: $previous_address");
-                }
             }
         }
  
@@ -92,6 +82,7 @@ _END;
     }
     else{
         echo "<font color='green'>Giriş Yapıldı</font><br>";
+        header('Location: index.php');
         
     }
     

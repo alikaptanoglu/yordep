@@ -1,6 +1,10 @@
 <?php
   ob_start();
   session_start();
+
+  if($_SERVER['PHP_SELF'] != '/login.php'){
+      $_SESSION['lastpage'] = "$_SERVER[REQUEST_URI]";
+  }
 ?>
 <header>
 
@@ -51,14 +55,6 @@ function loadDocMobile(category) {
 
 </script>
         
-    
-    
-    
-    <?php
-    if($_SERVER['PHP_SELF']!='/login.php'){
-        $_SESSION['lastpage']= "$_SERVER[REQUEST_URI]";
-    }
-    ?>
   
 	<div class="headerlogo">
         
